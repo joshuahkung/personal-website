@@ -40,7 +40,7 @@ export default function Home() {
           {/* Subtle label - Fades in after name */}
           <div className="animate-fade-in-delayed">
             <p className="text-2xl text-gray-600">
-              MS CS '27 • Technical Program Manager
+              MS CS '27
             </p>
           </div>
         </div>
