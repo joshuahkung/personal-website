@@ -24,9 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="light" style={{ colorScheme: 'light' }}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        
+
         {/* Navigation Bar */}
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white-900 text-black p-4">
           <div className="max-w-6xl mx-auto flex justify-between items-center">

@@ -50,7 +50,7 @@ export default function Projects() {
 
       {/* Header Section */}
       <section className="py-20 bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-8">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 text-center md:text-left">
           <h1 className="text-6xl font-bold mb-4">Projects</h1>
           <p className="text-xl text-gray-600">
             Personal things I've built while learning to code. 

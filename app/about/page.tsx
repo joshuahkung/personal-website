@@ -6,16 +6,16 @@ const sections = [
   {
     title: "Bio",
     photo: "/gradPic.jpg",
-    content: 
-        `I'm currently living in New York City. I was born in Los Angeles, CA and raised in the greater Anaheim area.
+    content:
+      `I'm currently living in New York City. I was born in Los Angeles, CA and raised in the greater Anaheim area.
 
         I love my friends and family.`
   },
   {
     title: "Work Experience",
     photo: "/coldSpr.jpg",
-    content: 
-        `I currently work as a technical program manager for STEM+SEL 501(c)(3), teaching kids in Harlem. I robotics to kids at GOSO.
+    content:
+      `I currently work as a technical program manager for STEM+SEL 501(c)(3), teaching kids in Harlem. I robotics to kids at GOSO.
         
         A year prior, I worked as a product manager intern for a healthcare start up. 
         
@@ -28,7 +28,7 @@ const sections = [
   {
     title: "Volunteering",
     photo: "/sfHat.jpg",
-    content: 
+    content:
       `I've volunteered in education for almost 10 years now 🤯🤯🤯
 
       Currently, I read books weekly to elementary school students with Read Ahead. 
@@ -42,7 +42,7 @@ const sections = [
   {
     title: "Interests",
     photo: "/winter.jpg",
-    content: 
+    content:
       `I love listening to new music, creating new playlists, going on long walks (30+ min), driving, and trying new foods. 
 
       I try to stay pretty active year-round. I like strength training and playing basketball. I just started going on jogs this past winter (I hate running btw), so we'll see if that sticks through the new year.
@@ -59,6 +59,15 @@ export default function AboutPage() {
   const [activeSection, setActiveSection] = useState(0)
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([])
 
+  // Preload all images
+  useEffect(() => {
+    sections.forEach((section) => {
+      const img = new window.Image()
+      img.src = section.photo
+    })
+  }, [])
+
+  // Handle scroll
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2
@@ -81,10 +90,10 @@ export default function AboutPage() {
 
   return (
     <main className="pt-20">
-      
+
       {/* Header */}
       <section className="py-20 bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-8">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 text-center md:text-left">
           <h1 className="text-6xl font-bold mb-4">About Me</h1>
           <p className="text-xl text-gray-600">
             My name is Joshua Kung.
@@ -96,7 +105,7 @@ export default function AboutPage() {
       <section className="py-20 bg-white-50">
         <div className="max-w-6xl mx-auto px-8">
           <div className="flex flex-col md:flex-row gap-12 ">
-            
+
             {/* LEFT: Sticky Photo */}
             <div className="md:w-1/3 md:sticky md:top-32 self-start">
               <div className="bg-purple-50 p-5 pb-10 shadow-lg rounded-sm">
@@ -131,7 +140,7 @@ export default function AboutPage() {
       </section>
 
       {/* Rest of about page... */}
-      
+
     </main>
   )
 }

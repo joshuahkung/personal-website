@@ -9,10 +9,10 @@ export default function BlogPage() {
 
       {/* Header */}
       <section className="py-20 bg-white border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-8">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 text-center md:text-left">
           <h1 className="text-6xl font-bold mb-4">Blog</h1>
           <p className="text-xl text-gray-600">
-            Me writing. 
+            Just my thoughts. 
           </p>
         </div>
       </section>
@@ -28,7 +28,7 @@ export default function BlogPage() {
                   href={`/blog/${post.slug}`}
                   className="block bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition"
                 >
-                  <h2 className="text-3xl font-bold mb-2 hover:text-blue-600 transition">
+                  <h2 className="text-3xl font-bold mb-2">
                     {post.title}
                   </h2>
 

@@ -15,7 +15,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "myLearnings",
-    title: "My Thoughts from Life",
+    title: "A Short List of Life Learnings",
     date: "Q4 2025",
     readTime: "2 min read",
     preview: "A short, unordered collection of important learnings acrewed over the years.",

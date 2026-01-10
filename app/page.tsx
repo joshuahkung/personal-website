@@ -40,24 +40,17 @@ export default function Home() {
           {/* Subtle label - Fades in after name */}
           <div className="animate-fade-in-delayed">
             <p className="text-2xl text-gray-600">
-              Grad Student • Technical Project Manager
+              MS CS '27 • Technical Program Manager
             </p>
           </div>
         </div>
-
-        {/* Subtle scroll hint */}
-        <div className="absolute bottom-12 animate-bounce opacity-50">
-          <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
       </section>
 
-      <section id="bio" className="border-b border-gray-200">
-        <div className="max-w-4xl mx-auto mb">
+      <section id="bio" className="border-b border-gray-200 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto mb text-center md:text-left">
 
           {/* Polariod + Bio Section */}
-          <div className="flex gap-8 items-start mb-12">
+          <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-12">
 
             {/* LEFT: Pokemon Flip + Polariod */}
             <FlipCard />
@@ -78,7 +71,7 @@ export default function Home() {
                 I'm currently pursuing my MS in CS/ML at Columbia University in New York City. I graduated from USC Spring '24 with my BS in Business Admin.
               </p>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Updated 01/07/26
+                Updated 01/10/26
               </p>
 
               {/* LEARN MORE BUTTON */}
@@ -97,10 +90,10 @@ export default function Home() {
       <section id="projects" className="min-h-screen bg-white-100 p-8 border-b border-gray-200">
         <div className="max-w-6xl mx-auto">
 
-          <div className="flex gap-12">
+          <div className="flex flex-col md:flex-row gap-12 items-center md:items-start">
 
             {/* Sticky sidebar */}
-            <div className="w-1/3 sticky top-24 self-start">
+            <div className="w-full md:w-1/3 md:sticky md:top-24 self-start mb-8 md:mb-0 text-center md:text-left">
               <h2 className="text-4xl font-bold mb-4">Featured Work</h2>
               <p className="text-gray-600 mb-6">
                 I've worked on some of these in my free time.
@@ -114,12 +107,12 @@ export default function Home() {
             </div>
 
             {/* Scrolling project cards */}
-            <div className="w-2/3 space-y-8">
+            <div className="w-full md:w-2/3 space-y-8">
               {featuredProjects.map((project, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
                   <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
-                  <div className="flex gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech, i) => (
                       <span key={i} className="bg-gray-100 px-3 py-1 rounded-full text-sm">
                         {tech}
@@ -145,7 +138,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Work in Progress</h2>
           <p className="text-gray-600 mb-8">
-            I'll update more over
+            I will update and expand this site over time.  
           </p>
           <div className="flex gap-4 justify-center">
 
