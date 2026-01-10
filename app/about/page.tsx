@@ -15,15 +15,15 @@ const sections = [
     title: "Work Experience",
     photo: "/coldSpr.jpg",
     content:
-      `I currently work as a technical program manager for STEM+SEL 501(c)(3), teaching kids in Harlem. I robotics to kids at GOSO.
+      `I currently work as a technical program manager for STEM+SEL 501(c)(3), teaching kids in Harlem. I teach robotics to kids at GOSO.
         
         A year prior, I worked as a product manager intern for a healthcare start up. 
         
-        During my time at USC, I worked as an AI Data Analyst Intern for the City of Palo Alto. I built a pretty cool tool that would ingest thousands of emails and draft up responses for legal aides, and I tried to look at voter trends with census data.
+        During my time at USC, I worked as an AI Data Analyst Intern for the City of Palo Alto. I built a pretty cool tool that would ingest thousands of emails and draft up responses for legal aides, and I analyzed voter trends with census data.
         
-        I project managed a digital banking transformation with KPMG LLP.
+        I project managed a digital banking transformation with KPMG LLP as an Advisory Intern in Transformational Delivery.
 
-        I worked strategic partnerships for T-Mobile for Business as a strategy analyst intern covering UCaaS, Metaverse, and Web3.`
+        I worked strategic partnerships for T-Mobile for Business as a Strategy Analyst Intern covering UCaaS, Metaverse, and Web3.`
   },
   {
     title: "Volunteering",
