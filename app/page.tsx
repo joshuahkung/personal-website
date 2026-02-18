@@ -5,7 +5,7 @@ const featuredProjects = [
     title: "joshuakung.com",
     description: "How's my very first website?",
     tech: ["React", "TypeScript", "Next.js", "Motion"],
-    link: "/projects"
+    link: "https://github.com/joshuahkung/personal-website"
   },
   {
     title: "Scalable Music Streaming Database",
@@ -23,7 +23,7 @@ const featuredProjects = [
     title: "Manual Options Trade Ledger in Pine Script: TradingView",
     description: "Designed and published a manual options log into a live table overlay.",
     tech: ["Pine Script"],
-    link: "/projects"
+    link: "https://github.com/joshuahkung/tradingview"
   },
 ]
 
@@ -71,7 +71,7 @@ export default function Home() {
                 I'm currently pursuing my MS in CS/ML at Columbia University in New York City. I graduated from USC Spring '24 with my BS in Business Admin.
               </p>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Updated 01/10/26
+                Updated 02/17/26
               </p>
 
               {/* LEARN MORE BUTTON */}
