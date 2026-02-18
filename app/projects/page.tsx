@@ -7,7 +7,7 @@ const projects = [
         Coming up with designs were the hardest part.
         Twas my first time building a website.`,
     tech: ["React", "TypeScript", "Next.js", "Motion"],
-    link: "/"
+    link: "https://github.com/joshuahkung/personal-website"
   },
   {
     title: "Scalable Music Streaming Database",
@@ -32,7 +32,7 @@ const projects = [
         Designed and published a manual options log into a live table overlay on a trading chart that auto-filled live data – timestamp, price, % change – and showed ticker, premium, contracts, strike, expiry, and notes with an export option to Google Sheets; built for traders who preferred a visual, copyable ledger that dynamically grew with their trades for a real-time trading workflow option traders. 
         So far only have six likes on it tho.`,
     tech: ["Pine Script"],
-    link: null
+    link: "https://github.com/joshuahkung/tradingview"
   },
   {
     title: "Modular Travel Booking Engine",
